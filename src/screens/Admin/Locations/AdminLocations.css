@@ -1,0 +1,12 @@
+.location .add {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: flex-end;
+  background: var(--green);
+  border-radius: 6px;
+  padding: 20px;
+  width: 75px;
+  margin-bottom: 20px;
+}

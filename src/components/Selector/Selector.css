@@ -1,0 +1,56 @@
+.selector {
+  font-size: 14px;
+  width: 190px;
+  position: relative;
+}
+.selector .selector-header {
+  cursor: pointer;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  /* background-color: var(--yellow); */
+  border: 1px solid var(--yellow);
+  border-radius: 7px;
+  justify-content: space-between;
+  padding: 10px;
+
+  font-size: 18px;
+
+  /* background: linear-gradient(89.1deg, var(--lightYellow), var(--yellow));
+  box-shadow: 5px 5px 10px -2px var(--black); */
+}
+.selector .selector-header.error {
+  border: 1px solid var(--red);
+}
+.selector .selector-header .title {
+  color: var(--yellow);
+  font-size: 12px;
+}
+
+.selector .list {
+  margin-top: 5px;
+  background-color: #d8d8d8;
+  border: 1px solid var(--yellow);
+  border-radius: 5px;
+  max-height: 300px;
+  overflow-y: scroll;
+
+  width: 100%;
+  position: absolute;
+  z-index: 500;
+
+  background: linear-gradient(89.1deg, var(--white), var(--white));
+  box-shadow: 5px 5px 10px -2px var(--black);
+  border-radius: 4px;
+}
+.selector .list .list-item {
+  cursor: pointer;
+  padding: 10px;
+  border-bottom: 1px solid var(--yellow);
+  display: flex;
+  justify-content: space-between;
+}
+.selector .list .list-item:hover {
+  background-color: var(--lightYellow);
+}

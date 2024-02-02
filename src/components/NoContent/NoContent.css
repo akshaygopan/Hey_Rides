@@ -1,0 +1,15 @@
+.no-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.no-content img {
+  margin-top: 40px;
+  width: 30%;
+}
+.no-content span {
+  padding-top: 20px;
+  font-size: 24px;
+  font-weight: 600;
+}

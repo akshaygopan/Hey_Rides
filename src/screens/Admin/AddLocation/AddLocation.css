@@ -1,0 +1,12 @@
+.add-location-page {
+  display: flex;
+}
+
+.add-location-page .title {
+  align-self: center;
+  font-size: 24px;
+  font-weight: 700;
+}
+.add-location-page .selector {
+  width: 400px;
+}

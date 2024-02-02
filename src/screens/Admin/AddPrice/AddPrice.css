@@ -1,0 +1,12 @@
+.add-price-page {
+  display: flex;
+}
+
+.add-price-page .title {
+  align-self: center;
+  font-size: 24px;
+  font-weight: 700;
+}
+.add-price-page .selector {
+  width: 400px;
+}

@@ -1,0 +1,9 @@
+.add-city-page {
+  display: flex;
+}
+
+.add-city-page .title {
+  align-self: center;
+  font-size: 24px;
+  font-weight: 700;
+}

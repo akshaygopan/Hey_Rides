@@ -1,0 +1,17 @@
+.main {
+  margin-top: 123px;
+}
+.sidenav {
+  display: none;
+}
+@media screen and (max-width: 800px) {
+  .sidenav {
+    display: flex;
+  }
+  .header {
+    display: none !important;
+  }
+  .main {
+    margin-top: unset;
+  }
+}

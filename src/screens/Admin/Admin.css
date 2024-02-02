@@ -1,0 +1,103 @@
+.admin {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+.admin .list-content {
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+  padding: 20px;
+  border-radius: 6px;
+  background: linear-gradient(89.1deg, var(--lightYellow), var(--yellow));
+  box-shadow: 5px 5px 10px -2px var(--black);
+}
+
+.admin .login-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.admin .login-container .input-container {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin: 10px 0;
+}
+.admin .login-container .input {
+  outline: none;
+  border: none;
+  padding: 0 10px;
+  width: 400px;
+  height: 50px;
+  box-sizing: border-box;
+  background: linear-gradient(89.1deg, var(--yellow), var(--yellow));
+  box-shadow: 5px 5px 10px -2px var(--black);
+  border-radius: 6px;
+  transition: all 0.2s ease-in-out;
+}
+.admin .login-container .input.input-error {
+  border: 1px solid var(--red);
+}
+.admin .login-container .error-text {
+  position: absolute;
+  top: 57px;
+  color: var(--red);
+  font-size: 9px;
+  margin-left: 3px;
+  align-self: flex-start;
+}
+.admin .login-container .input-container .password-icon {
+  cursor: pointer;
+  position: absolute;
+  top: 18px;
+  right: 10px;
+}
+.admin .login-container .info-text {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  font-size: 12px;
+  color: var(--black);
+}
+
+.admin .login-container button {
+  outline: none;
+  border: none;
+  cursor: pointer;
+  height: 30px;
+  padding: 0 20px;
+
+  background: linear-gradient(89.1deg, var(--yellow), var(--yellow));
+  box-shadow: 5px 5px 10px -2px var(--black);
+  border-radius: 4px;
+  transition: all 0.2s ease-in-out;
+}
+.admin .login-container button:hover {
+  background: var(--white);
+}
+.admin .login-container input::placeholder,
+.admin .login-container input,
+.admin .login-container button {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 18px;
+  color: var(--black);
+}
+.admin .action-buttons {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.admin .Pending {
+  color: var(--black);
+}
+.admin .Confirmed {
+  color: var(--green);
+}
+.admin .Cancelled {
+  color: var(--red);
+}

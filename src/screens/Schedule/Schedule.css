@@ -1,0 +1,156 @@
+.schedule-page {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 20px 0 20px;
+}
+/* search area */
+.schedule-page .search-area {
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  align-self: center;
+  padding: 20px;
+}
+.schedule-page .search-area .location {
+  gap: 30;
+}
+.schedule-page .search-area .location .selector,
+.schedule-page .search-area .date input,
+.schedule-page .search-area .passengers {
+  width: 250px;
+}
+
+/* schedule content */
+.schedule-page .schedule-content {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+/* rides */
+.schedule-page .schedule-content .rides {
+  display: flex;
+  flex-direction: column;
+  flex: 4;
+  gap: 10px;
+}
+.schedule-page .schedule-content .rides .ride {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  padding: 20px;
+  border-radius: 6px;
+  background: var(--white);
+  box-shadow: 5px 5px 10px -2px var(--black);
+  transition: all 0.3s ease-in-out;
+}
+.schedule-page .schedule-content .rides .ride.selected {
+  background: linear-gradient(89.1deg, var(--yellow), var(--white));
+}
+.schedule-page .schedule-content .rides .ride .from,
+.schedule-page .schedule-content .rides .ride .to {
+  display: flex;
+  flex-direction: column;
+}
+.schedule-page .schedule-content .rides .ride .time {
+  font-size: 26px;
+  color: var(--blue);
+  font-weight: 500;
+}
+.schedule-page .schedule-content .rides .ride .location {
+  font-weight: 500;
+}
+.schedule-page .schedule-content .travel-time {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-weight: 500;
+}
+.schedule-page .schedule-content .travel-time img {
+  width: 50px;
+}
+.schedule-page .schedule-content .price {
+  font-size: 24px;
+  font-weight: 600;
+  color: var(--red);
+}
+
+/* ride details */
+
+.schedule-page .ride-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-height: 275px;
+  flex: 1;
+  gap: 15px;
+  padding: 20px;
+  border-radius: 6px;
+  background: linear-gradient(89.1deg, var(--white), var(--white));
+  box-shadow: 5px 5px 10px -2px var(--black);
+}
+.schedule-page .ride-details .selector {
+  width: unset;
+}
+.schedule-page .ride-details .custom-location input {
+  outline: none;
+  border: none;
+  padding: 0 10px;
+  box-sizing: border-box;
+  width: 100%;
+  height: 30px;
+
+  border: 1px solid var(--yellow);
+  background: var(--white);
+  /* box-shadow: 5px 5px 10px -2px var(--black); */
+  border-radius: 6px;
+  transition: all 0.2s ease-in-out;
+}
+.schedule-page .ride-details .custom-location.error input {
+  border: 1px solid var(--red);
+}
+.schedule-page .ride-details .confirm-booking {
+  outline: none;
+  border: none;
+  cursor: pointer;
+  height: 30px;
+  padding: 0 20px;
+  background: linear-gradient(89.1deg, var(--yellow), var(--yellow));
+  box-shadow: 5px 5px 10px -2px var(--black);
+  border-radius: 4px;
+  transition: all 0.2s ease-in-out;
+}
+.schedule-page .ride-details .confirm-booking:hover {
+  background: var(--white);
+}
+@media screen and (max-width: 1200px) {
+  .schedule-page .search-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  .schedule-page .search-area .location .selector,
+  .schedule-page .search-area .date input,
+  .schedule-page .search-area .passengers {
+    width: 190px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .schedule-page .schedule-content {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .schedule-page .schedule-content .rides .ride .time,
+  .schedule-page .schedule-content .price {
+    font-size: 20px;
+  }
+  .schedule-page .schedule-content .travel-time img {
+    width: 30px;
+  }
+}
